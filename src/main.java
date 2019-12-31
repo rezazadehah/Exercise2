@@ -4,8 +4,27 @@ public class main {
     public static void main(String[] args) {
 
         //es1();
-        es2();
+        //es2();
+        es3();
+    }
 
+    private static void es3()
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("enter width : ");
+        int width = in.nextInt();
+        System.out.print("enter height : ");
+        int height = in.nextInt();
+
+        masahat(width , height);
+        mohit(width,height);
+    }
+
+    private static void masahat(int width,int height){
+        System.out.println("masahat : "+(width*height));
+    }
+    private static void mohit(int width,int height){
+        System.out.println("mohit : "+((width+height)*2));
     }
 
     private static void es2()
